@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잡다한 것들을 모아둔 놀이터</title>
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity = "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin = "anonymous">
+    <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity = "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin = "anonymous"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity = "sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin = "anonymous"></script>
+    <script src = "https://kit.fontawesome.com/06fb83cb17.js" crossorigin = "anonymous"></script>
+    <link href = "https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel = "stylesheet">     
+    <link rel = "stylesheet" href = "./public/style-master/border.css">
+    <link rel = "stylesheet" href = "./public/style-master/box.css">
+    <link rel = "stylesheet" href = "./public/style-master/button.css">
+    <link rel = "stylesheet" href = "./public/style-master/font.css">
+    <link rel = "stylesheet" href = "./public/style-master/footer.css">
+    <link rel = "stylesheet" href = "./public/style-master/outline.css">
+</head>
+<body onload = "setbg()">
+    <div style = "position: fixed; top: 0; left: 0; right: 0; z-index: -1;"> 
+        <br><br><br><br><br><br>
+        <div class = "container">
+            <h1 class = "white blurshadow-grey">놀이터</h1>
+            <h6 class = "white blurshadow-grey">Made by 홍은표</h6>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <main class = "container box-white">
+        <br>
+
+        <br><br><br>
+        <button onclick = "window.open('https://m.me/makerpotato179')" class = "button-proceed white" style = "background-color: #7289db; padding: 10px; font-size: 20px; margin: 3px; width: 100%;"><span>문의하기</span></button>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type = "text/javascript" src = "./timetable.js"></script>
+    <script>
+        var gradi = Math.floor(Math.random()*16777215).toString(16);
+        var gradj = Math.floor(Math.random()*16777215).toString(16);
+        function setbg(){
+            document.querySelector("body").style.cssText = `background: linear-gradient(to right, #${gradi}, #${gradj});`
+            document.querySelector("main").style.cssText = `opacity: 1;`;
+        }
+    </script>
+</body>
+</html>
